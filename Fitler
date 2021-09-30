@@ -1,0 +1,17 @@
+function reportManagement() {
+
+  var ss = SpreadsheetApp.getAvtiveSpreadsheet() 
+  var trn = ss.getSheetByName()
+  var sss = SpreadSheetApp.openByUrl()
+  var data = sss.getRange( , , , ).getValues()
+  var filter = ''
+
+Logger.log()
+
+  var datta2 = data.filter(funvtion(item){
+      return item[] == filter
+})
+
+trn.getRange( , , , ).setValues(data2)
+
+}
