@@ -1,9 +1,12 @@
+
 function reportManagement() {
 
-  var ss = SpreadsheetApp.getAvtiveSpreadsheet() 
-  var trn = ss.getSheetByName()
-  var sss = SpreadSheetApp.openByUrl()
-  var data = sss.getRange( , , , ).getValues()
+
+  var trn = ss.getSheetByName() #spreadsheet where the data will be pasted
+
+  var sss = SpreadSheetApp.openByUrl() #spreadsheet where i will get the data
+
+  var data = sss.getRange( , , , ).getValues() 
   var filter = ''
 
 Logger.log()
